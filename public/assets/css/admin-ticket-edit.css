@@ -1,0 +1,63 @@
+/**
+ * Trang sửa ticket — nền tối admin: chữ / form đọc rõ.
+ * Scope: .ticket-edit-page (chỉ ảnh hưởng trang có wrapper này).
+ */
+
+/* Nền tối (mặc định): không có body.theme-light */
+body:not(.theme-light) .ticket-edit-page .form-label,
+body:not(.theme-light) .ticket-edit-page .breadcrumb,
+body:not(.theme-light) .ticket-edit-page .breadcrumb-item,
+body:not(.theme-light) .ticket-edit-page .breadcrumb-item.active {
+    color: #e8eaed !important;
+}
+
+body:not(.theme-light) .ticket-edit-page h1,
+body:not(.theme-light) .ticket-edit-page h3,
+body:not(.theme-light) .ticket-edit-page .block-title {
+    color: #f1f3f4 !important;
+}
+
+body:not(.theme-light) .ticket-edit-page .form-control-plaintext,
+body:not(.theme-light) .ticket-edit-page label.form-control-plaintext,
+body:not(.theme-light) .ticket-edit-page .ticket-message-body {
+    color: #f8f9fa !important;
+}
+
+body:not(.theme-light) .ticket-edit-page .form-control,
+body:not(.theme-light) .ticket-edit-page .form-select {
+    color: #f8f9fa !important;
+    background-color: #2d3339 !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+body:not(.theme-light) .ticket-edit-page .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+body:not(.theme-light) .ticket-edit-page select.form-select option {
+    background-color: #1e2228;
+    color: #f8f9fa;
+}
+
+body:not(.theme-light) .ticket-edit-page .link-fx {
+    color: #8ab4f8 !important;
+}
+
+/* Khối nội dung tin nhắn */
+.ticket-edit-page .ticket-message-body {
+    min-height: 3rem;
+    white-space: pre-wrap;
+}
+
+/* Chế độ sáng */
+body.theme-light .ticket-edit-page .form-control-plaintext,
+body.theme-light .ticket-edit-page .ticket-message-body {
+    color: inherit !important;
+}
+
+body.theme-light .ticket-edit-page .form-control,
+body.theme-light .ticket-edit-page .form-select {
+    color: inherit !important;
+    background-color: #fff !important;
+    border-color: #dee2e6 !important;
+}
