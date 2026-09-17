@@ -8,6 +8,12 @@ use App\Http\Controllers\Frontend\HomeController;
 Route::get('/', function () {
    return view('welcome');
 });
+
+// Smoke test for Vercel / container health checks
+Route::get('/health', static function () {
+    return response()->json(['status' => 'ok']);
+});
+
 Route::get('/index.html', [HomeController::class, 'index']);
 
 Route::get('/test-mail', function () {
